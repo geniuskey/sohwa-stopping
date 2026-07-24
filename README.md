@@ -15,6 +15,7 @@ GitHub Pages 공개용 정리본은 `docs/`에 있습니다.
 - `llm-wiki/README.md`: 1주 액션 플랜
 - `llm-wiki/references/source-map.md`: 기사·법령·판례·유사사례
 - `llm-wiki/research-construction-noise-barrier-2026-07-24.md`: 공사장 방음벽 조사·요구안
+- `llm-wiki/action-manual-for-parents.md`: 법과 행정절차를 모르는 학부모용 실행 매뉴얼
 - `llm-wiki/strategy-legal-issues.md`: 법적 쟁점
 - `llm-wiki/evidence-checklist.md`: 현장 증거 수집 체크리스트
 - `llm-wiki/drafts/info-disclosure.md`: 정보공개청구 문안

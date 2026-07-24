@@ -70,6 +70,7 @@
 - `research-update-2026-07-24.md`: 심층 조사 결과와 72시간 실행 순서
 - `research-sunlight-view-2026-07-24.md`: A17 학교 일조·조망 및 평가대상 조사
 - `research-construction-noise-barrier-2026-07-24.md`: 공사장 방음벽 법령·높이·면적·성능 요구안
+- `action-manual-for-parents.md`: 처음 참여하는 학부모용 접수·전화·현장기록 매뉴얼
 - `references/source-map.md`: 기사·법령·판례·사례 레퍼런스 맵
 - `strategy-legal-issues.md`: 법적 쟁점과 주장 구조
 - `drafts/petition.md`: 시/GH/시공사 대상 호소문 초안
