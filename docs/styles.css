@@ -315,6 +315,13 @@ dd {
   margin-top: 14px;
 }
 
+.document-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -407,6 +414,10 @@ code {
   }
 
   .hero-actions .button {
+    width: 100%;
+  }
+
+  .document-links .button {
     width: 100%;
   }
 }
