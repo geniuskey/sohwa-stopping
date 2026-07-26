@@ -10,6 +10,9 @@ outline: false
   eyebrow="광교 A17블록 공공주택 공사 대응"
   title="공사 승인이 끝났더라도, 착공 전 통학 안전대책은 다시 요구할 수 있습니다."
   lead="목표는 공사를 막는 것이 아닙니다. 소화초 학생들이 안전하게 승하차하고 등하교할 수 있도록 대체 정차공간, 안심 승하차구역, 공사차량 통제, 가설방음벽 선시공을 착공 전에 문서로 확정하는 것입니다."
+  image="/images/a17-winning-rendering.jpg"
+  image-alt="광교 A17블록 공동주택 당선안 조감도"
+  image-caption="동부건설 제공 당선안 조감도 · 최종 승인도면과 다를 수 있음"
   :actions="[
     { text: '처음 오셨나요', link: '/start/' },
     { text: '실행 순서 보기', link: '/action/', theme: 'alt' },
