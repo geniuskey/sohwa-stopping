@@ -1,0 +1,301 @@
+/*
+ * 접근성 기준
+ * - 본문/링크 대비는 라이트·다크 모두 WCAG AA(4.5:1) 이상으로 맞춘다.
+ * - 포커스 링은 색상만이 아니라 두께로도 구분되게 한다.
+ * - 애니메이션은 prefers-reduced-motion 에서 모두 끈다.
+ */
+
+:root {
+  --vp-font-family-base: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', sans-serif;
+
+  --vp-c-brand-1: #1f4f9c;
+  --vp-c-brand-2: #1a4488;
+  --vp-c-brand-3: #2456a6;
+  --vp-c-brand-soft: rgba(31, 79, 156, 0.14);
+
+  --vp-c-danger-1: #a5342a;
+  --vp-c-danger-2: #8f2c23;
+  --vp-c-danger-3: #b33a2f;
+  --vp-c-danger-soft: rgba(179, 58, 47, 0.14);
+
+  --vp-c-tip-1: #146149;
+  --vp-c-tip-2: #11543f;
+  --vp-c-tip-3: #1d7658;
+  --vp-c-tip-soft: rgba(29, 118, 88, 0.14);
+
+  --vp-c-warning-1: #8a5a0b;
+  --vp-c-warning-2: #744c09;
+  --vp-c-warning-3: #b7791f;
+  --vp-c-warning-soft: rgba(183, 121, 31, 0.16);
+
+  --vp-button-brand-bg: #1f4f9c;
+  --vp-button-brand-hover-bg: #1a4488;
+  --vp-button-brand-active-bg: #163a74;
+  --vp-button-brand-border: transparent;
+
+  --sw-line: #d9dee7;
+  --sw-panel: #ffffff;
+  --sw-panel-muted: #f5f7fa;
+  --sw-focus: #b3391f;
+
+  /* 본문 가독성: 한글 장문 기준으로 행간을 넉넉히 준다. */
+  --vp-layout-max-width: 1500px;
+}
+
+.dark {
+  --vp-c-brand-1: #9dc0f5;
+  --vp-c-brand-2: #b5d0f8;
+  --vp-c-brand-3: #7ba7ea;
+  --vp-c-brand-soft: rgba(122, 167, 234, 0.18);
+
+  --vp-c-danger-1: #f0a49b;
+  --vp-c-danger-2: #f5bcb5;
+  --vp-c-danger-3: #e08a80;
+  --vp-c-danger-soft: rgba(224, 138, 128, 0.18);
+
+  --vp-c-tip-1: #86d5b6;
+  --vp-c-tip-2: #a5e2ca;
+  --vp-c-tip-3: #66c4a0;
+  --vp-c-tip-soft: rgba(102, 196, 160, 0.18);
+
+  --vp-c-warning-1: #e8bd6d;
+  --vp-c-warning-2: #f0cf90;
+  --vp-c-warning-3: #d8a848;
+  --vp-c-warning-soft: rgba(216, 168, 72, 0.18);
+
+  --vp-button-brand-bg: #2f63b8;
+  --vp-button-brand-hover-bg: #3a72cc;
+  --vp-button-brand-active-bg: #27539b;
+  --vp-button-brand-text: #ffffff;
+
+  --sw-line: #33383f;
+  --sw-panel: #1f2126;
+  --sw-panel-muted: #24262b;
+  --sw-focus: #ffb4a2;
+}
+
+/* ---------- 포커스 가시성 ---------- */
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--sw-focus);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+.VPSkipLink {
+  font-weight: 700;
+}
+
+/* ---------- 본문 타이포 ---------- */
+
+.vp-doc {
+  line-height: 1.78;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.vp-doc h2 {
+  margin-top: 44px;
+  padding-top: 22px;
+}
+
+.vp-doc h3 {
+  margin-top: 28px;
+}
+
+.vp-doc li + li {
+  margin-top: 6px;
+}
+
+.vp-doc blockquote {
+  border-left-width: 4px;
+  border-left-color: var(--vp-c-brand-1);
+  background: var(--sw-panel-muted);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+}
+
+.vp-doc blockquote > p {
+  margin: 0;
+  color: var(--vp-c-text-1);
+}
+
+/* 가로로 긴 표는 본문을 밀지 않고 자기 영역 안에서만 스크롤한다. */
+.sw-table {
+  margin: 20px 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.sw-table > table {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+
+/* 넘치는 표에만 테마가 tabindex 를 붙인다. 키보드로 스크롤할 때 초점이 보여야 한다. */
+.sw-table[tabindex]:focus-visible {
+  outline: 3px solid var(--sw-focus);
+  outline-offset: 2px;
+}
+
+.vp-doc div[class*='language-'] {
+  scrollbar-width: thin;
+}
+
+/* ---------- 홈 히어로 ---------- */
+
+.sw-hero {
+  padding: clamp(28px, 5vw, 56px) 0 8px;
+  border-bottom: 1px solid var(--sw-line);
+}
+
+.sw-hero__eyebrow {
+  display: inline-block;
+  margin: 0 0 14px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--vp-c-danger-soft);
+  color: var(--vp-c-danger-1);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.sw-hero__title {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 4.4vw, 44px);
+  line-height: 1.32;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  word-break: keep-all;
+}
+
+.sw-hero__lead {
+  margin: 0 0 24px;
+  max-width: 62ch;
+  font-size: clamp(16px, 1.6vw, 18px);
+  line-height: 1.75;
+  color: var(--vp-c-text-2);
+  word-break: keep-all;
+}
+
+.sw-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ---------- 공용 카드 ---------- */
+
+.sw-grid {
+  display: grid;
+  gap: 16px;
+  margin: 24px 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+}
+
+.sw-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border: 1px solid var(--sw-line);
+  border-radius: 12px;
+  background: var(--sw-panel);
+}
+
+.sw-card__title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.sw-card__meta {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--vp-c-brand-1);
+  letter-spacing: -0.01em;
+}
+
+.sw-card__body {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+  word-break: keep-all;
+}
+
+.sw-card__link {
+  margin-top: auto;
+  padding-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a.sw-card--link {
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+a.sw-card--link:hover {
+  border-color: var(--vp-c-brand-1);
+  background: var(--sw-panel-muted);
+}
+
+/* ---------- 인쇄 ---------- */
+
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPLocalNav,
+  .VPFooter,
+  .VPDocFooter,
+  .VPDocAside,
+  .sw-copy__button,
+  .VPBackdrop {
+    display: none !important;
+  }
+
+  .VPDoc,
+  .VPContent {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .vp-doc {
+    max-width: none;
+    font-size: 11pt;
+    line-height: 1.6;
+  }
+
+  .vp-doc a::after {
+    content: ' (' attr(href) ')';
+    font-size: 9pt;
+    color: #444;
+    word-break: break-all;
+  }
+
+  .sw-card,
+  .vp-doc blockquote {
+    break-inside: avoid;
+  }
+}
+
+/* ---------- 모션 축소 ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

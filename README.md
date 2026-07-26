@@ -1,24 +1,42 @@
 # sohwa-stopping
 
-광교 소화초등학교 인근 A17블록 공공주택 공사에 따른 통학 차량 정차공간 상실 및 학생 안전 문제 대응 자료 저장소입니다.
+광교 소화초등학교 인근 A17블록 공공주택 공사에 따른 통학 차량 정차공간 상실, 통학로 안전, 공사소음 문제에 대응하기 위한 학부모 자료집입니다.
 
-## 공개 페이지
+공개 사이트: <https://geniuskey.github.io/sohwa-stopping/>
 
-GitHub Pages 공개용 정리본은 `docs/`에 있습니다.
+## 구조
 
-- 핵심 전략: 착공 전 통학 안전대책 보완 및 문서화
-- 원본 조사 위키: `llm-wiki/`
-- 공개 페이지: `docs/index.html`
+VitePress 기반 정적 사이트이며 `docs/` 안의 마크다운이 그대로 페이지가 됩니다.
 
-## 주요 문서
+```
+docs/
+  index.md              홈
+  start/                처음 오셨나요, 자주 묻는 질문
+  action/               실행 순서
+  submit/               접수 방법 4갈래
+  demands/              착공 전 요구안 체크리스트
+  grounds/              주장의 근거
+  fieldwork/            현장 기록과 증거 체크리스트
+  responses/            답변을 받았을 때
+  letters/              바로 쓸 문안 6종
+  research/             심층 조사 자료와 레퍼런스 맵
+  about.md              면책과 기여 안내
+  .vitepress/           설정, 테마, 공용 컴포넌트
+```
 
-- `llm-wiki/README.md`: 1주 액션 플랜
-- `llm-wiki/references/source-map.md`: 기사·법령·판례·유사사례
-- `llm-wiki/research-construction-noise-barrier-2026-07-24.md`: 공사장 방음벽 조사·요구안
-- `llm-wiki/action-manual-for-parents.md`: 법과 행정절차를 모르는 학부모용 실행 매뉴얼
-- `llm-wiki/strategy-legal-issues.md`: 법적 쟁점
-- `llm-wiki/evidence-checklist.md`: 현장 증거 수집 체크리스트
-- `llm-wiki/drafts/info-disclosure.md`: 정보공개청구 문안
-- `llm-wiki/drafts/petition.md`: 호소문 초안
-- `llm-wiki/drafts/official-letter.md`: 관계기관 공문 초안
-- `llm-wiki/drafts/media-brief.md`: 언론 제보문 초안
+## 개발
+
+```bash
+pnpm install
+pnpm dev      # 로컬 개발 서버
+pnpm build    # 정적 빌드 (내부 링크가 깨지면 실패)
+pnpm preview  # 빌드 결과 확인
+```
+
+`main`에 push하면 GitHub Actions가 빌드해 GitHub Pages로 배포합니다.
+
+## 기여
+
+내용 오류나 최신 정보는 이슈 또는 PR로 알려주세요. 각 문서 하단의 "이 문서의 오류·최신 정보 제보하기" 링크로 바로 편집할 수 있습니다.
+
+학생 얼굴, 차량번호 등 개인정보가 포함된 자료는 저장소에 올리지 않습니다.
