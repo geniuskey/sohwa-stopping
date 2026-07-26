@@ -115,6 +115,7 @@ export default defineConfig({
             { text: '조사자료 안내', link: '/research/' },
             { text: '종합 조사 업데이트', link: '/research/overview' },
             { text: '제2차 긴급회의 회의록', link: '/research/emergency-meeting-2026-07-22' },
+            { text: '포켓도로와 대체공간', link: '/research/pocket-road' },
             { text: '광교중앙로·학교 부지 변동', link: '/research/road-history' },
             { text: '법적 쟁점과 주장 구조', link: '/research/legal-issues' },
             { text: '학교 일조·조망', link: '/research/sunlight' },
