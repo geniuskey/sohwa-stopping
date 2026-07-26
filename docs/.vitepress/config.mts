@@ -114,6 +114,7 @@ export default defineConfig({
           items: [
             { text: '조사자료 안내', link: '/research/' },
             { text: '종합 조사 업데이트', link: '/research/overview' },
+            { text: '광교중앙로·학교 부지 변동', link: '/research/road-history' },
             { text: '법적 쟁점과 주장 구조', link: '/research/legal-issues' },
             { text: '학교 일조·조망', link: '/research/sunlight' },
             { text: '공사장 방음벽', link: '/research/noise-barrier' },
