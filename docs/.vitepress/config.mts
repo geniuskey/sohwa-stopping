@@ -121,6 +121,7 @@ export default defineConfig({
             { text: '광교중앙로·학교 부지 변동', link: '/research/road-history' },
             { text: '주장 강도와 근거 수준', link: '/research/claim-strength-audit' },
             { text: '법적 쟁점과 주장 구조', link: '/research/legal-issues' },
+            { text: '관련 판례 정밀 검토', link: '/research/case-law' },
             { text: '학교 일조·조망', link: '/research/sunlight' },
             { text: '공사장 방음벽', link: '/research/noise-barrier' },
             { text: 'A17 공개 이미지 자료', link: '/research/visuals' },
