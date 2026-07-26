@@ -7,11 +7,17 @@ defineProps<{
   caption: string
   sourceHref?: string
   sourceLabel?: string
+  fullPage?: boolean
 }>()
 </script>
 
 <template>
-  <figure class="sw-evidence-figure">
+  <figure
+    :class="[
+      'sw-evidence-figure',
+      { 'sw-evidence-figure--full-page': fullPage },
+    ]"
+  >
     <img :src="withBase(src)" :alt="alt" />
     <figcaption>
       {{ caption }}

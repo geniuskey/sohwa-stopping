@@ -277,6 +277,12 @@ a.sw-card--link:hover {
   background: var(--sw-panel-muted);
 }
 
+.sw-evidence-figure--full-page img {
+  width: 100%;
+  max-height: none;
+  height: auto;
+}
+
 .sw-evidence-figure figcaption {
   padding: 12px 14px;
   border-top: 1px solid var(--sw-line);
