@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">소화초·광교중앙로·A17 지도 윤곽 비교도</title>
+  <desc id="desc">사용자 제공 옛 지도와 현재 지적편집도에서 확인되는 학교, 광교중앙로, 옛 법원 검찰청 부지와 A17 공동주택 획지의 상대적 위치를 단순화한 벡터 도식</desc>
+  <defs>
+    <style>
+      .bg { fill: #f3f1eb; }
+      .panel { fill: #fffdf8; stroke: #d5d0c6; stroke-width: 2; }
+      .map-bg { fill: #f7f4eb; }
+      .title { font: 700 42px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #15263a; }
+      .subtitle { font: 400 20px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #536274; }
+      .panel-title { font: 700 26px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #fff; }
+      .label { font: 700 21px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #26384c; }
+      .small { font: 500 17px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #536274; }
+      .tiny { font: 500 15px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #657386; }
+      .road { fill: none; stroke: #eadf9d; stroke-width: 70; stroke-linecap: round; stroke-linejoin: round; }
+      .road-core { fill: none; stroke: #fff9dc; stroke-width: 54; stroke-linecap: round; stroke-linejoin: round; }
+      .road-edge { fill: none; stroke: #c9bd7c; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .minor-road { fill: none; stroke: #e9e5dc; stroke-width: 30; stroke-linecap: round; stroke-linejoin: round; }
+      .school { fill: #dbe8f4; stroke: #7896b0; stroke-width: 3; }
+      .court { fill: #dedfda; stroke: #858b8b; stroke-width: 3; }
+      .a17 { fill: #fff9cf; stroke: #b9a84b; stroke-width: 3; }
+      .public { fill: #e7e8df; stroke: #9aa091; stroke-width: 2; }
+      .green { fill: #c8e3ac; stroke: #7aa35a; stroke-width: 2; }
+      .building { fill: #bfc8cf; stroke: #75828d; stroke-width: 2; }
+      .school-building { fill: #b9d1e5; stroke: #688aa5; stroke-width: 2; }
+      .tag-old { fill: #526a7b; }
+      .tag-now { fill: #1f4f9c; }
+      .callout { fill: #fff8df; stroke: #c48a13; stroke-width: 3; stroke-dasharray: 9 7; }
+      .callout-line { fill: none; stroke: #c48a13; stroke-width: 3; }
+      .verified-dot { fill: #2d7a4b; }
+      .unknown-dot { fill: #c48a13; }
+    </style>
+    <clipPath id="clipA"><rect x="50" y="165" width="710" height="540" rx="12"/></clipPath>
+    <clipPath id="clipB"><rect x="840" y="165" width="710" height="540" rx="12"/></clipPath>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+  <text class="title" x="50" y="68">소화초·광교중앙로·A17 지도 윤곽 비교도</text>
+  <text class="subtitle" x="50" y="108">실제 지도 캡처에서 읽히는 상대적 위치만 단순화했다. 과거 토지경계나 최종 차량 출입구를 복원한 그림이 아니다.</text>
+
+  <rect class="panel" x="30" y="145" width="750" height="590" rx="16"/>
+  <g clip-path="url(#clipA)">
+    <rect class="map-bg" x="50" y="165" width="710" height="540"/>
+    <path class="green" d="M435 165 L760 165 L760 705 L620 705 L630 580 L565 445 L470 350 Z"/>
+    <path class="minor-road" d="M55 650 C190 610 290 620 365 690"/>
+    <path class="road" d="M230 160 L230 430 C230 510 190 580 110 675"/>
+    <path class="road-core" d="M230 160 L230 430 C230 510 190 580 110 675"/>
+    <path class="road-edge" d="M230 160 L230 430 C230 510 190 580 110 675"/>
+    <path class="school" d="M300 170 L520 170 L555 275 L445 345 L305 315 L270 230 Z"/>
+    <path class="school-building" d="M335 195 L455 195 L475 245 L380 270 L320 240 Z"/>
+    <text class="label" x="337" y="302">소화초등학교</text>
+    <path class="court" d="M300 350 L565 310 L675 445 L620 625 L330 665 L255 545 Z"/>
+    <rect class="building" x="345" y="385" width="105" height="56" rx="4"/>
+    <rect class="building" x="470" y="405" width="120" height="54" rx="4"/>
+    <rect class="building" x="390" y="478" width="90" height="60" rx="4"/>
+    <rect class="building" x="505" y="500" width="105" height="60" rx="4"/>
+    <text class="label" x="355" y="590">옛 법원·검찰청 부지</text>
+    <path class="public" d="M635 310 L760 275 L760 615 L680 620 L650 505 L690 410 Z"/>
+    <text class="small" x="665" y="365">공공시설</text>
+    <text class="small" x="665" y="390">영역</text>
+  </g>
+  <rect class="tag-old" x="50" y="135" width="300" height="48" rx="24"/>
+  <text class="panel-title" x="75" y="168">A. 옛 청사 시기 지도</text>
+  <text class="label" transform="rotate(-90 197 430)" x="197" y="430">광교중앙로</text>
+
+  <rect class="panel" x="820" y="145" width="750" height="590" rx="16"/>
+  <g clip-path="url(#clipB)">
+    <rect class="map-bg" x="840" y="165" width="710" height="540"/>
+    <path class="green" d="M1280 165 L1550 165 L1550 705 L1450 705 L1425 610 L1470 480 L1400 335 Z"/>
+    <path class="road" d="M955 160 L955 705"/>
+    <path class="road-core" d="M955 160 L955 705"/>
+    <path class="road-edge" d="M955 160 L955 705"/>
+    <path class="minor-road" d="M840 660 C1030 650 1260 675 1550 690"/>
+    <path class="school" d="M1035 170 L1270 170 L1360 290 L1270 382 L1075 340 L1010 270 Z"/>
+    <path class="school-building" d="M1085 190 L1245 205 L1285 265 L1200 305 L1065 270 Z"/>
+    <text class="label" x="1085" y="330">소화초등학교</text>
+    <path class="a17" d="M1035 392 L1265 378 L1425 470 L1415 650 L1250 705 L1030 660 L995 520 Z"/>
+    <text class="label" x="1130" y="545">A17 공동주택 획지</text>
+    <text class="small" x="1178" y="575">지적편집도 표기</text>
+    <path class="public" d="M1430 430 L1550 395 L1550 650 L1440 650 Z"/>
+    <text class="small" x="1450" y="510">공공청사</text>
+    <path d="M982 445 L1040 445 L1040 505 L982 505 Z" fill="#fffdf8"/>
+    <path class="callout-line" d="M985 475 L1032 475"/>
+    <circle class="callout" cx="1008" cy="475" r="48"/>
+    <path class="callout-line" d="M1048 445 C1090 410 1120 405 1170 410"/>
+    <rect class="callout" x="1125" y="382" width="265" height="66" rx="12"/>
+    <text class="small" x="1145" y="409">서측 연결 형태 확인</text>
+    <text class="tiny" x="1145" y="433">차량 출입구인지는 미확인</text>
+  </g>
+  <rect class="tag-now" x="840" y="135" width="315" height="48" rx="24"/>
+  <text class="panel-title" x="865" y="168">B. 현재 지적편집도</text>
+  <text class="label" transform="rotate(-90 922 430)" x="922" y="430">광교중앙로</text>
+
+  <g transform="translate(50 775)">
+    <circle class="verified-dot" cx="9" cy="0" r="8"/>
+    <text class="small" x="27" y="6">지도에서 확인: 학교·도로·옛 청사/A17 획지의 상대적 위치</text>
+    <circle class="unknown-dot" cx="650" cy="0" r="8"/>
+    <text class="small" x="668" y="6">공문서 필요: 학교 토지 편입·취득방식·면적, 서측 연결부의 최종 용도</text>
+  </g>
+  <rect x="50" y="815" width="1500" height="52" rx="10" fill="#e8edf3"/>
+  <text class="small" x="75" y="847">주의: 사용자 제공 지도 캡처를 사람이 단순화한 비축척 개념도다. 시점·좌표계·법적 경계를 증명하지 않으며, 원본 지도와 공식 승인도면을 함께 제시해야 한다.</text>
+</svg>
