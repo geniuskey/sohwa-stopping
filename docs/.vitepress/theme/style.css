@@ -289,9 +289,117 @@ a.sw-card--link:hover {
   font-weight: 700;
 }
 
+/* ---------- 기관 회의용 3쪽 요약 ---------- */
+
+.sw-brief-sheet {
+  display: grid;
+  gap: 28px;
+  margin: 28px 0;
+}
+
+.sw-brief-page {
+  position: relative;
+  min-height: 980px;
+  padding: 42px 46px 64px;
+  border: 1px solid var(--sw-line);
+  border-radius: 14px;
+  background: var(--sw-panel);
+  box-shadow: 0 8px 28px rgb(25 42 61 / 8%);
+}
+
+.sw-brief-page h2 {
+  margin: 8px 0 18px;
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+.sw-brief-page h3 {
+  margin: 24px 0 10px;
+  font-size: 18px;
+}
+
+.sw-brief-page p,
+.sw-brief-page li,
+.sw-brief-page td,
+.sw-brief-page th {
+  font-size: 14px;
+  line-height: 1.58;
+}
+
+.sw-brief-kicker {
+  color: var(--vp-c-brand-1);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.sw-brief-lead {
+  padding-left: 16px;
+  border-left: 4px solid var(--vp-c-brand-1);
+  font-size: 17px !important;
+  font-weight: 650;
+}
+
+.sw-brief-callout {
+  margin: 18px 0;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: var(--sw-panel-muted);
+}
+
+.sw-brief-callout p {
+  margin: 0 0 8px;
+}
+
+.sw-brief-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.sw-brief-demands {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 26px;
+  padding-left: 22px;
+}
+
+.sw-brief-demands li {
+  padding-left: 4px;
+}
+
+.sw-brief-decision td {
+  height: 52px;
+}
+
+.sw-brief-sign {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 24px;
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--sw-line);
+  font-size: 14px;
+}
+
+.sw-brief-footer {
+  position: absolute;
+  right: 46px;
+  bottom: 24px;
+  left: 46px;
+  padding-top: 10px;
+  border-top: 1px solid var(--sw-line);
+  color: var(--vp-c-text-3);
+  font-size: 11px;
+}
+
 /* ---------- 인쇄 ---------- */
 
 @media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+
   .VPNav,
   .VPSidebar,
   .VPLocalNav,
@@ -325,6 +433,70 @@ a.sw-card--link:hover {
   .sw-card,
   .vp-doc blockquote {
     break-inside: avoid;
+  }
+
+  .sw-briefing-route .vp-doc > h1,
+  .sw-briefing-route .vp-doc > h1 + p,
+  .sw-briefing-route .vp-doc > .sw-brief-sheet + p {
+    display: none;
+  }
+
+  .sw-briefing-route .vp-doc {
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+
+  .sw-brief-sheet {
+    display: block;
+    margin: 0;
+  }
+
+  .sw-brief-page {
+    box-sizing: border-box;
+    min-height: 0;
+    height: 277mm;
+    padding: 12mm 12mm 15mm;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .sw-brief-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .sw-brief-page h2 {
+    font-size: 20pt;
+  }
+
+  .sw-brief-page h3 {
+    margin-top: 5mm;
+    font-size: 12pt;
+  }
+
+  .sw-brief-page p,
+  .sw-brief-page li,
+  .sw-brief-page td,
+  .sw-brief-page th {
+    font-size: 9.3pt;
+    line-height: 1.42;
+  }
+
+  .sw-brief-lead {
+    font-size: 11pt !important;
+  }
+
+  .sw-brief-page a::after {
+    content: none;
+  }
+
+  .sw-brief-footer {
+    right: 12mm;
+    bottom: 6mm;
+    left: 12mm;
   }
 }
 
