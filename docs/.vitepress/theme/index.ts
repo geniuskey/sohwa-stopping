@@ -7,6 +7,7 @@ import Card from './components/Card.vue'
 import CardGrid from './components/CardGrid.vue'
 import Checklist from './components/Checklist.vue'
 import CopyBlock from './components/CopyBlock.vue'
+import EvidenceFigure from './components/EvidenceFigure.vue'
 import HomeHero from './components/HomeHero.vue'
 
 import './style.css'
@@ -50,6 +51,7 @@ export default {
     app.component('CardGrid', CardGrid)
     app.component('Checklist', Checklist)
     app.component('CopyBlock', CopyBlock)
+    app.component('EvidenceFigure', EvidenceFigure)
     app.component('HomeHero', HomeHero)
   },
 } satisfies Theme

@@ -248,6 +248,47 @@ a.sw-card--link:hover {
   background: var(--sw-panel-muted);
 }
 
+/* ---------- 출처가 있는 이미지 자료 ---------- */
+
+.sw-visual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+
+.sw-evidence-figure {
+  margin: 24px 0;
+  overflow: hidden;
+  border: 1px solid var(--sw-line);
+  border-radius: 12px;
+  background: var(--sw-panel);
+}
+
+.sw-visual-grid .sw-evidence-figure {
+  margin: 0;
+}
+
+.sw-evidence-figure img {
+  display: block;
+  width: 100%;
+  max-height: 720px;
+  object-fit: contain;
+  background: var(--sw-panel-muted);
+}
+
+.sw-evidence-figure figcaption {
+  padding: 12px 14px;
+  border-top: 1px solid var(--sw-line);
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.sw-evidence-figure figcaption a {
+  font-weight: 700;
+}
+
 /* ---------- 인쇄 ---------- */
 
 @media print {

@@ -117,6 +117,7 @@ export default defineConfig({
             { text: '법적 쟁점과 주장 구조', link: '/research/legal-issues' },
             { text: '학교 일조·조망', link: '/research/sunlight' },
             { text: '공사장 방음벽', link: '/research/noise-barrier' },
+            { text: 'A17 공개 이미지 자료', link: '/research/visuals' },
             { text: '레퍼런스 맵', link: '/research/source-map' },
           ],
         },
