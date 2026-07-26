@@ -102,6 +102,7 @@ export default defineConfig({
           items: [
             { text: '문안 모음', link: '/letters/' },
             { text: '정보공개청구', link: '/letters/info-disclosure' },
+            { text: '기관별 정보공개청구', link: '/letters/info-disclosure-packages' },
             { text: '착공 전 공동요구서', link: '/letters/joint-demand' },
             { text: '관계기관 공문', link: '/letters/official-letter' },
             { text: '호소문', link: '/letters/petition' },
@@ -116,12 +117,20 @@ export default defineConfig({
             { text: '종합 조사 업데이트', link: '/research/overview' },
             { text: '제2차 긴급회의 회의록', link: '/research/emergency-meeting-2026-07-22' },
             { text: '포켓도로와 대체공간', link: '/research/pocket-road' },
+            { text: '토지변동 증거도 작업판', link: '/research/land-change-evidence' },
             { text: '광교중앙로·학교 부지 변동', link: '/research/road-history' },
+            { text: '주장 강도와 근거 수준', link: '/research/claim-strength-audit' },
             { text: '법적 쟁점과 주장 구조', link: '/research/legal-issues' },
             { text: '학교 일조·조망', link: '/research/sunlight' },
             { text: '공사장 방음벽', link: '/research/noise-barrier' },
             { text: 'A17 공개 이미지 자료', link: '/research/visuals' },
             { text: '레퍼런스 맵', link: '/research/source-map' },
+          ],
+        },
+        {
+          text: '회의 자료',
+          items: [
+            { text: '기관·의원실 3쪽 요약', link: '/briefing/three-page-brief' },
           ],
         },
         {

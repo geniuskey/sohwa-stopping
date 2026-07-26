@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">소화초·광교중앙로·A17 토지변동 증거도 작업판</title>
+  <desc id="desc">사용자 제공 옛 지도와 현재 지적편집도를 나란히 놓고, 공식 지적·도로·보상 자료가 들어오면 확인할 항목을 표시한 비교판</desc>
+  <defs>
+    <style>
+      .bg { fill: #f4f0e8; }
+      .paper { fill: #fffdf8; stroke: #d7d0c3; stroke-width: 2; }
+      .title { font: 700 42px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #192a3d; }
+      .subtitle { font: 400 21px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #526071; }
+      .label { font: 700 24px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #fff; }
+      .body { font: 500 20px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #25364a; }
+      .small { font: 400 17px "Noto Sans KR", "Malgun Gothic", sans-serif; fill: #526071; }
+      .tag { fill: #1f4f9c; }
+      .unknown { fill: #fff4cf; stroke: #d09c18; stroke-width: 2; stroke-dasharray: 9 7; }
+      .arrow { stroke: #1f4f9c; stroke-width: 5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#1f4f9c"/>
+    </marker>
+    <clipPath id="oldClip"><rect x="75" y="205" width="430" height="430" rx="8"/></clipPath>
+    <clipPath id="nowClip"><rect x="585" y="205" width="430" height="430" rx="8"/></clipPath>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+  <text class="title" x="70" y="72">소화초·광교중앙로·A17 토지변동 증거도 작업판</text>
+  <text class="subtitle" x="70" y="112">실제 지도 캡처는 보조자료로 비교하고, 공식 지적·도로·보상 원문이 확보되면 같은 좌표계로 중첩한다.</text>
+
+  <rect class="paper" x="55" y="155" width="470" height="650" rx="14"/>
+  <rect class="tag" x="75" y="175" width="260" height="46" rx="23"/>
+  <text class="label" x="95" y="207">A. 옛 청사 시기 지도</text>
+  <image href="old-court-site-map.png" x="75" y="205" width="430" height="430" preserveAspectRatio="xMidYMid slice" clip-path="url(#oldClip)"/>
+  <text class="body" x="75" y="680">확인 가능</text>
+  <text class="small" x="75" y="712">학교·청사·광교중앙로의 상대적 위치</text>
+  <text class="body" x="75" y="754">확인 불가</text>
+  <text class="small" x="75" y="786">소유경계·편입면적·출입구 개수</text>
+
+  <rect class="paper" x="565" y="155" width="470" height="650" rx="14"/>
+  <rect class="tag" x="585" y="175" width="280" height="46" rx="23"/>
+  <text class="label" x="605" y="207">B. 현재 지적편집도</text>
+  <image href="a17-cadastral-edit-map.png" x="585" y="205" width="430" height="430" preserveAspectRatio="xMidYMid slice" clip-path="url(#nowClip)"/>
+  <text class="body" x="585" y="680">확인 가능</text>
+  <text class="small" x="585" y="712">A17 공동주택 획지·녹지·서측 연결부</text>
+  <text class="body" x="585" y="754">확인 불가</text>
+  <text class="small" x="585" y="786">지도 기준일·시설용도·최종 승인동선</text>
+
+  <path class="arrow" d="M1037 480 C1080 480 1080 480 1115 480"/>
+
+  <rect class="paper" x="1115" y="155" width="430" height="650" rx="14"/>
+  <rect class="tag" x="1135" y="175" width="235" height="46" rx="23"/>
+  <text class="label" x="1155" y="207">C. 공식 중첩도</text>
+  <rect class="unknown" x="1135" y="245" width="390" height="285" rx="10"/>
+  <text class="body" x="1165" y="295">원자료 확보 후 채울 층</text>
+  <text class="small" x="1165" y="340">1. 2000·2002년 폐쇄 지적도</text>
+  <text class="small" x="1165" y="378">2. 2007년 실시계획 편입용지도</text>
+  <text class="small" x="1165" y="416">3. 광교중앙로 도로구역·선형</text>
+  <text class="small" x="1165" y="454">4. 현재 지적도·A17 승인배치도</text>
+  <text class="small" x="1165" y="492">5. 연도별 정사영상·항공사진</text>
+  <text class="body" x="1135" y="585">계산 결과</text>
+  <text class="small" x="1135" y="622">개발 전 학교 승계필지 합계</text>
+  <text class="small" x="1135" y="656">− 현재 학교 승계필지 합계</text>
+  <text class="small" x="1135" y="690">= 순감소 면적</text>
+  <text class="small" x="1135" y="736">도로·녹지·기타 처분별로 재분류</text>
+  <text class="small" x="1135" y="770">취득방식: 협의취득/수용재결 구분</text>
+
+  <text class="small" x="70" y="858">주의: A·B는 제작일·축척·좌표계가 확인되지 않은 사용자 제공 캡처다. 현재 단계에서 토지 수용이나 출입구 위치를 확정하는 증거로 사용하지 않는다.</text>
+</svg>
